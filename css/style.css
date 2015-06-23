@@ -1,0 +1,153 @@
+
+/* Page Styles
+================================ */
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font: normal 1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+img {
+	border: solid 1px;
+	padding: 5px;
+}
+.main-nav {
+	background-color: #303239; 
+}
+.side-bar {
+	background-color: #384047; 
+} 
+	
+/* Main Layout Styles
+================================ */
+
+.main-nav a {
+	display: block;
+	text-align: center;
+	border-radius: 2px;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+.side-bar a {
+	display: block;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+.main-nav a:hover,
+.side-bar a:hover  { 
+	color: white;
+	border-radius: 2px;
+	background-color: #333; 
+}
+.main-active,
+.side-active { 
+	color: white;
+	border-radius: 2px;
+	background-color: #222; 
+}
+.main-footer {
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+ 	background-color: #b7c0c7;
+}
+
+.main-content ul {
+	list-style-type: disc;
+	padding-left: 15px;
+}
+
+/* Set beginning tabs. Hide all except Home related */
+.side-tab {
+	display: none;
+}
+
+.home {
+	display: block;
+}
+
+@media (min-width: 768px) { 
+
+	/* Main Layout Styles
+	================================ */
+	body {
+		padding-top: 0px;
+	}
+	.nav-container {
+		position: relative;
+		width: 100%;
+		height: 32px;
+		text-align: center;
+		padding-top: 0;
+	}
+	
+	.main-nav li {
+		width: 15%;
+		display: inline-block;
+	}
+	.main-nav a {
+		width: 100%;
+		display: inline-block;
+		padding: 4px 15px;
+	}
+	
+	.side-bar {
+		display: inline;
+		position: relative;
+		float: left;
+		width: 150px;
+		top: 0px;
+		left: 0;
+		padding-top: 20px;
+		bottom: 0;
+		overflow: auto;
+	}
+	.side-bar li {
+		text-align: left;
+	}
+	.main-banner {
+		background: #dfe2e4 url(http://www.lorempixel.com/900/300);
+		text-align: center;
+		color: white;
+		width: 100%;
+		height: 300px;
+		text-shadow: 0 0 10px #000;
+	}
+	
+	/* Offset for side bar */
+	.main-content {
+		margin-left: 150px;
+	}
+	
+	.f-nav-container {
+		z-index: 9999;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	/* Imagery
+	================================ */
+
+	.feat-img {
+		width: 45%;
+		float: left;
+		margin: 5px 20px 10px 0;
+	}
+
+}
+
+@media (min-width: 1px) and (max-width: 767px)  {
+	.main-nav li {
+		margin-top: 12px;
+	}
+}
