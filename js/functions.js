@@ -13,84 +13,23 @@ $("document").ready(function($) {
 });
 
 // Main menu tabs
-function nav_home()
+function main_nav(tabName)
 {
 	// Set the nav tab active
-	highlightMainTab('home');
+	highlightMainTab(tabName);
 	
 	// Set the sidebar
-	setSidebar('home');
+	setSidebar(tabName);
 	
-	// Display content
-	
-	return false;
-}
-function nav_theChair()
-{
-	// Set the nav tab active
-	highlightMainTab('the-chair');
-	
-	// Set the sidebar
-	setSidebar('the-chair');
-	
-	// Display content
-	
-	return false;
-}
-function nav_fundRaising()
-{
-	// Set the nav tab active
-	highlightMainTab('fund-raising');
-	
-	// Set the sidebar
-	setSidebar('fund-raising');
-	
-	// Display content
-	
-	return false;
-}
-function nav_endorsements()
-{
-	// Set the nav tab active
-	highlightMainTab('endorsements');
-	
-	// Set the sidebar
-	setSidebar('endorsements');
-	
-	// Display content
-	
-	return false;
-}
-function nav_brochures()
-{
-	// Set the nav tab active
-	highlightMainTab('brochures');
-	
-	// Set the sidebar
-	setSidebar('brochures');
-	
-	// Display content
-	
-	return false;
-}
-function nav_contactUs()
-{
-	// Set the nav tab active
-	highlightMainTab('contact-us');
-	
-	// Set the sidebar
-	setSidebar('contact-us');
-	
-	// Display content
-	
-	return false;
 }
 // /Main menu tabs
 
 // Side Bar tabs
-function side_theObjectives(tab)
+function side_nab(tabName)
 {
+	hightlightSideTab(tabName);
 	
+	setContent(tabName);
 }
 // /Side Bar tabs
 

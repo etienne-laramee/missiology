@@ -30,22 +30,22 @@
 				<!-- Nav bar -->
 				<ul class="main-nav">
 					<li id="home" class="main-tab main-active">
-						<a href="javascript:void(0)" onclick="nav_home();">Home</a>
+						<a href="javascript:void(0)" onclick="main_nav('home');">Home</a>
 					</li>
 					<li id="the-chair" class="main-tab">
-						<a href="javascript:void(0)" onclick="nav_theChair();">The Chair</a>
+						<a href="javascript:void(0)" onclick="main_nav('the-chair');">The Chair</a>
 					</li>
 					<li id="fund-raising" class="main-tab">
-						<a href="javascript:void(0)" onclick="nav_fundRaising(this);">Fund Raising</a>
+						<a href="javascript:void(0)" onclick="main_nav('fund-raising');">Fund Raising</a>
 					</li>
 					<li id="endorsements" class="main-tab">
-						<a href="javascript:void(0)" onclick="nav_endorsements(this);">Endorsements</a>
+						<a href="javascript:void(0)" onclick="main_nav('endorsements');">Endorsements</a>
 					</li>
 					<li id="brochures" class="main-tab">
-						<a href="javascript:void(0)" onclick="nav_brochures(this);">Brochures</a>
+						<a href="javascript:void(0)" onclick="main_nav('brochures');">Brochures</a>
 					</li>
 					<li id="contact-us" class="main-tab">
-						<a href="javascript:void(0)" onclick="nav_contactUs(this);">Contact Us</a>
+						<a href="javascript:void(0)" onclick="main_nav('contact-us');">Contact Us</a>
 					</li>
 				</ul>
 				<!-- /Nav bar -->
@@ -54,36 +54,75 @@
 				<ul class="side-bar">
 					<!-- Home -->
 					<li id='the-objectives' class='side-tab side-active home'>
-						<a href='javascript:void(0)' onclick='side_theObjectives(this);'>The Objectives</a>
+						<a href="javascript:void(0)" onclick="side_nav('the-objectives');">The Objectives</a>
 					</li>
 					<li id='an-opportunity' class='side-tab home'>
-						<a href='javascript:void(0)' onclick='side_anOpportunity(this);'>An Opportunity</a>
+						<a href="javascript:void(0)" onclick="side_nav('an-opportunity');">An Opportunity</a>
 					</li>
 					<!-- /Home -->
 					
 					<!-- The Chair -->
 					<li id="the-needs" class="side-tab the-chair">
-						<a href="javascript:void(0)" onclick="side_theNeeds(this);">The Needs</a>
+						<a href="javascript:void(0)" onclick="side-nav('the-needs');">The Needs</a>
 					</li>
 					<li id="benefits" class="side-tab the-chair">
-						<a href="javascript:void(0)" onclick="side_benefits(this);">Benefits</a>
+						<a href="javascript:void(0)" onclick="side-nav('benefits');">Benefits</a>
 					</li>
 					<li id="joining-the-dialogue" class="side-tab the-chair">
-						<a href="javascript:void(0)" onclick="side_joiningTheDialogue(this);">Joining the Dialogue</a>
+						<a href="javascript:void(0)" onclick="side-nav('joining-the-dialog');">Joining the Dialogue</a>
 					</li>
 					<li id="missiology-for-today" class="side-tab the-chair">
-						<a href="javascript:void(0)" onclick="side_missiologyForToday(this);">Missiology for Today</a>
+						<a href="javascript:void(0)" onclick="side-nav('missiology-for-today');">Missiology for Today</a>
 					</li>
 					<li id="sample-curriculum" class="side-tab the-chair">
-						<a href="javascript:void(0)" onclick="side_sampleCurriculum(this);">Sample Curriculum</a>
+						<a href="javascript:void(0)" onclick="side-nav('sample-curriculum');">Sample Curriculum</a>
 					</li>
 					<li id="a-pertinent-question" class="side-tab the-chair">
-						<a href="javascript:void(0)" onclick="side_aPertinentQuestion(this);">A Pertinent Question</a>
+						<a href="javascript:void(0)" onclick="side-nav('a-pertinent-question');">A Pertinent Question</a>
 					</li>
 					<li id="other-chairs-at-laval" class="side-tab the-chair">
-						<a href="javascript:void(0)" onclick="side_otherChairsAtLaval(this);">Other Chairs at Laval</a>
+						<a href="javascript:void(0)" onclick="side-nav('other-chairs-at-laval');">Other Chairs at Laval</a>
 					</li>
 					<!-- /The Chair -->
+					
+					<!-- Fund Raising -->
+					<li id="objectives-and-status" class="side-tab fund-raising">
+						<a href="javascript:void(0)" onclick="side-nav('objectives-and-status');">Objectives and Status</a>
+					</li>
+					<li id="contributing" class="side-tab fund-raising">
+						<a href="javascript:void(0)" onclick="side-nav('contributing');">Contributing</a>
+					</li>
+					<li id="the-board" class="side-tab fund-raising">
+						<a href="javascript:void(0)" onclick="side-nav('the-board');">The Board</a>
+					</li>
+					<!-- /Fund Raising -->
+					
+					<!-- Endorsements -->
+					<li id="us" class="side-tab endorsements">
+						<a href="javascript:void(0)" onclick="side-nav('us');">US</a>
+					</li>
+					<li id="canadian" class="side-tab endorsements">
+						<a href="javascript:void(0)" onclick="side-nav('canadian');">Canadian</a>
+					</li>
+					<!-- /Endorsements -->
+					
+					<!-- Brochures -->
+					<li id="brochures" class="side-tab brochures">
+						<a href="javascript:void(0)" onclick="side-nav('brochures');">Brochures</a>
+					</li>
+					<!-- /Brochures -->
+					
+					<!-- Contact Us -->
+					<li id="us-contributors" class="side-tab contact-us">
+						<a href="javascript:void(0)" onclick="side-nav('us-contributors');">US Contributors</a>
+					</li>
+					<li id="canadian-contributors" class="side-tab contact-us">
+						<a href="javascript:void(0)" onclick="side-nav('canadian-contributors');">Canadian Contributors</a>
+					</li>
+					<li id="other" class="side-tab contact-us">
+						<a href="javascript:void(0)" onclick="side-nav('other');">Other</a>
+					</li>
+					<!-- /Contact Us -->
 				</ul>
 				<!-- /Side Bar -->
 			</div>
@@ -92,7 +131,7 @@
 			<!-- Main Content -->
 			<div class="main-content">				
 				<div class="grid-container primary">
-					<div class="grid-6">
+					<div class="grid-12">
 						<p>
 							<strong>The creation</strong> of an Education Leadership Chair in Evangelical Protestant missiology at the,
 							<ul>
@@ -111,7 +150,7 @@
 							<strong>The Chair</strong> plays a unique role and occupies a unique place as the only Chair in Missiology in any francophone nation.
 						</p>
 					</div>
-					<div class="grid-6">
+					<div class="grid-12">
 						<p>
 							<h1>Responding to a pressing need</h1>
 						</p>
@@ -133,7 +172,7 @@
 		
 		<div class="main-footer">
 			<p>
-				&copy; 2015 <a href="www.etiennelaramee.com">Etienne Laram&eacute;e</a>
+				&copy; 2015 <a href="http://www.etiennelaramee.com">Etienne Laram&eacute;e</a>
 			</p>
 			
 			<!-- JQuery -->
