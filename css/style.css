@@ -124,7 +124,7 @@ img {
 		text-align: left;
 	}
 	.main-banner {
-		background: #dfe2e4 url("../images/banner_1280_300px.png");
+		background: #dfe2e4 url("http://lorempixel.com/1600/500");
 		padding-top: 90px;
 		text-align: center;
 		color: white;

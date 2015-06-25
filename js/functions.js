@@ -10,6 +10,10 @@ $("document").ready(function($) {
 			//nav.addClass('nav-container');
 		}
 	});
+	
+	// Select default tabs and content
+	main_nav('home');
+	side_nav('the-objectives');
 });
 
 // Main menu tabs
@@ -25,9 +29,9 @@ function main_nav(tabName)
 // /Main menu tabs
 
 // Side Bar tabs
-function side_nab(tabName)
+function side_nav(tabName)
 {
-	hightlightSideTab(tabName);
+	highlightSideTab(tabName);
 	
 	setContent(tabName);
 }
@@ -42,18 +46,23 @@ function highlightMainTab(tab)
 	{
 		allTabs[i].setAttribute('class', 'main-tab');
 	}
+	
 	// Highlight only selected tab
 	var selected = document.getElementById(tab);
 	selected.setAttribute('class', 'main-tab main-active');
-	return false;
+	
+	// Select first side tab by default
+	var firstTab = $("." + tab);
+	side_nav(firstTab.attr('id'));
 }
 
 function highlightSideTab(tab)
 {
-	
 	// UnHighlight all tabs
+	$(".side-tab").removeClass("side-active");
 	
 	// Highlight only selected tab
+	$("#" + tab).addClass('side-active');
 }
 
 function setSidebar(tab)
@@ -70,4 +79,13 @@ function setSidebar(tab)
 	{
 		relatedTabs[i].style.display = "block";
 	}
+}
+
+function setContent(tabName)
+{
+	// Hide all content
+	$(".primary-content").children().css('display', 'none');
+	 
+	// Display only related content
+	$(".content-" + tabName).css('display', 'block');
 }
