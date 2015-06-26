@@ -96,12 +96,14 @@ img {
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+		z-index: 100;
 	}
 	.main-nav ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
+		z-index: 1000;
 	}
 	.main-nav li {
 		width: 15%;
@@ -122,7 +124,7 @@ img {
 		bottom: 0;
 		padding-top: 20px;
 		overflow: auto;
-		z-index: -1;
+		z-index: 10;
 	}
 	.side-bar a {
 		text-align: left;
