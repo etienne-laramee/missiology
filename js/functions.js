@@ -2,7 +2,8 @@ $("document").ready(function($) {
 	var nav = $('.nav-container');
 	
 	$(window).scroll(function() {
-		if($(this).scrollTop() > 300) {
+		var navHeight = 300;
+		if($(this).scrollTop() > navHeight) {
 			nav.addClass("f-nav-container");
 			//nav.removeClass('nav-container');
 		} else {
