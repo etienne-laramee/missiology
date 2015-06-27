@@ -1,8 +1,8 @@
 $("document").ready(function($) {
 	var nav = $('.nav-container');
-	
+	var bannerHeight = 300;
 	$(window).scroll(function() {
-		var navHeight = 300;
+		var navHeight = bannerHeight;
 		if($(this).scrollTop() > navHeight) {
 			nav.addClass("f-nav-container");
 			//nav.removeClass('nav-container');

@@ -127,6 +127,9 @@ img {
 		overflow: auto;
 		z-index: 10;
 	}
+	.fixed  {
+		position: fixed;
+	}
 	.side-bar a {
 		text-align: left;
 	}
