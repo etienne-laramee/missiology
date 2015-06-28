@@ -8,19 +8,25 @@
 }
 body {
 	font: normal 1em/1.5 sans-serif;
-	color: #222;
-	background-color: #edeff0;
+	color: #0a0b0c;
+	background-color: #fff;
 }
 img {
 	border: solid 1px;
 	padding: 5px;
 }
 .main-nav {
-	background-color: #303239; 
+	color: #fff;
+	background-color: #222; 
 }
 .side-bar {
+	color: #000;
 	background-color: #ccc;
-} 
+}
+.main-footer {
+	color: #fff;
+ 	background-color: #222;
+}
 	
 /* Main Layout Styles
 ================================ */
@@ -28,7 +34,6 @@ img {
 .main-nav a {
 	display: block;
 	text-align: center;
-	border-radius: 2px;
 	color: white;
 	text-decoration: none;
 	padding: 10px 20px;
@@ -36,31 +41,33 @@ img {
 .side-bar a {
 	display: block;
 	text-align: center;
-	border-radius: 2px;
 	text-decoration: none;
 	padding: 10px 20px;
 }
 .side-tab a {
 	color: black;
 }
-.main-nav a:hover,
-.side-bar a:hover  { 
-	color: white;
-	border-radius: 2px;
-	background-color: #333; 
-}
 .main-active,
-.side-active { 
-	color: white;
-	border-radius: 2px;
-	background-color: #222; 
+.main-nav a:hover {
+	color: #FFF4E4;
+	background-color: #FFAD34;
+	text-shadow: 0 0 2px #000;
+}
+.side-active,
+.side-bar a:hover  { 
+	color: #080603;
+	background-color: #aaa; 
 }
 .main-footer {
 	text-align: center;
 	margin-top: 30px;
 	padding-top: 5px;
 	padding-bottom: 5px;
- 	background-color: #b7c0c7;
+	position: relative;
+}
+
+.main-footer a {
+	color: #fff;
 }
 
 .main-content ul {
@@ -85,15 +92,13 @@ img {
 		padding-top: 0px;
 	}
 	.nav-container {
-		position: absolute;
-		top: 300px;
+		position: static;
+		top: 300;
 		width: 100%;
 		text-align: center;
 		padding-top: 0;
-		height: 100%;
 	}
 	.main-nav {
-		width: 100%;
 		display: block;
 		list-style-type: none;
 		margin: 0;
@@ -135,13 +140,13 @@ img {
 		color: white;
 		width: 100%;
 		height: 300px;
-		text-shadow: 0 0 10px #000;
+		text-shadow: 0 0 5px #000;
 	}
 	
 	/* Offset for side bar */
 	.main-content {
-		margin-left: 150px;
-		margin-top: 50px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 	
 	.f-nav-container {

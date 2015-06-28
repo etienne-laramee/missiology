@@ -1,49 +1,67 @@
+var defContentMargin = 30;
+
 $("document").ready(function($) {
-	var nav = $('.nav-container');
-	var bannerHeight = 300;
 	$(window).scroll(function() {
-		var scrollTop = $(this).scrollTop();
-		
-		// Nav fix when scroll
-		var navHeight = bannerHeight;
-		if(scrollTop > navHeight) {
-			nav.addClass("f-nav-container");
-			//nav.removeClass('nav-container');
-		} else {
-			nav.removeClass("f-nav-container");
-			//nav.addClass('nav-container');
-		}
-		
+		fixNav();
 		fixFooter();
 	});
 	
 	// Select default tabs and content
 	main_nav('home');
 	side_nav('the-objectives');
+	
 });
+
+function fixNav()
+{
+	var nav = $('.nav-container');
+	var scrollTop = $(window).scrollTop();
+	
+	// Get nav height to fix main-content margin once clipped since position:fixed; is out
+	// of the page's flow.
+	var navHeight = ($('.nav-container').outerHeight(true));
+	var fixedMargin = (navHeight + defContentMargin);
+	var content = $('.main-content');
+	
+	// Get height before clipping nav
+	var banner = $('.main-banner');
+	var bannerHeight = banner.outerHeight(true);
+	
+	// If scroll beyond the nav bar, clip it to the top
+	if(scrollTop >= bannerHeight) {
+		nav.addClass("f-nav-container");
+		content.css('margin-top', fixedMargin);
+	} else {
+		nav.removeClass("f-nav-container");
+		content.css('margin-top', defContentMargin);
+	}
+}
 
 function fixFooter()
 {
-		var scrollTop = $(window).scrollTop();
-		
-		// Footer fix when scroll
-		var windowHeight = $(window).height();
-		var mainFooter = $('.main-footer');
-		var mainContent = $('.main-content');
-	
-		var footerPosition = mainFooter.position();
-		var contentPosition = mainContent.position();
-		var contentBottom = (contentPosition.top + mainContent.height());
-		var bottomWindow = (windowHeight + scrollTop);
-		if(((contentBottom + 150) < bottomWindow) && (footerPosition.top <= bottomWindow))
-		{
-			mainFooter.addClass('f-footer');
-		}
-		else
-		{
-			mainFooter.removeClass('f-footer');
-		}
+	var content = $('.main-content');
+	var contentBottom = (content.offset().top + content.outerHeight(true));
 
+	var footer = $('.main-footer');
+	var footerHeight = footer.outerHeight(false);
+	var footerTop = footer.offset().top;
+	var footerBottom = (footerTop + footerHeight);
+	
+	var fixedMargin = (footerHeight + defContentMargin);
+	
+	// Get bottom of screen
+	var bottomScreen = ($(window).scrollTop() + $(window).height());
+	
+	if((footerBottom <= bottomScreen) && (bottomScreen > contentBottom))
+	{
+		footer.addClass('f-footer');
+		content.css('margin-bottom', fixedMargin);
+	}
+	else
+	{
+		footer.removeClass('f-footer');
+		content.css('margin-bottom', defContentMargin);
+	}
 }
 
 // Main menu tabs
@@ -54,7 +72,6 @@ function main_nav(tabName)
 	
 	// Set the sidebar
 	setSidebar(tabName);
-	
 }
 // /Main menu tabs
 
@@ -65,7 +82,6 @@ function side_nav(tabName)
 	
 	setContent(tabName);
 	
-	// Unfix footer
 	fixFooter();
 }
 // /Side Bar tabs
