@@ -38,9 +38,17 @@ img {
 	text-decoration: none;
 	padding: 10px 20px;
 }
+.main-nav li {
+	width: 30%;
+	display: inline-block;
+	padding: 0;
+}
+.side-bar {
+	font-size: 90%;
+	text-align: center;
+}
 .side-bar a {
 	display: block;
-	text-align: center;
 	text-decoration: none;
 	padding: 10px 20px;
 }
@@ -175,6 +183,15 @@ img {
 		margin: 5px 20px 10px 0;
 	}
 
+}
+
+@media (max-width: 900px) {
+	.main-nav {
+		font-size: 70%;
+	}
+	.side-bar {
+		font-size: 60%;
+	}
 }
 
 @media (min-width: 1px) and (max-width: 767px)  {
