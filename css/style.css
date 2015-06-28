@@ -74,7 +74,7 @@ img {
 }
 
 .home {
-	display: block;
+	display: inline-block;
 }
 
 @media (min-width: 768px) { 
@@ -94,12 +94,7 @@ img {
 	}
 	.main-nav {
 		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		z-index: 100;
 		display: block;
-	}
-	.main-nav ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -116,22 +111,22 @@ img {
 		color: white;
 	}
 	.side-bar {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 		display: block;
-		position: relative;
-		float: left;
-		width: 150px;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		padding-top: 20px;
-		overflow: auto;
-		z-index: 10;
+		list-style-type: none;
+		padding: 0;
+		overflow: hidden;
+		z-index: 1000;
+	}
+	
+	.side-bar li {
+		display: inline-block;
+		padding: 0;	
 	}
 	.fixed  {
 		position: fixed;
-	}
-	.side-bar a {
-		text-align: left;
 	}
 	.main-banner {
 		background: #dfe2e4 url("http://lorempixel.com/1600/500");
@@ -150,12 +145,21 @@ img {
 	}
 	
 	.f-nav-container {
-		z-index: 9999;
+		z-index: 1000;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 	}
+	
+	.f-footer
+	{
+		z-index: 1001;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}	
 
 	/* Imagery
 	================================ */
