@@ -30,7 +30,7 @@ function fixNav()
 	// If scroll beyond the nav bar, clip it to the top
 	if(scrollTop >= bannerHeight) {
 		nav.addClass("f-nav-container");
-		if(nav.hasClass("f-nav-container")
+		if(nav.hasClass("f-nav-container"))
 		{
 			content.css('margin-top', fixedMargin);
 		}
