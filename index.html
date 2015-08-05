@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Lorem Ipsum</title>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="description" content="Sample 12-grid, responsive simple SPA. Coded in JS with JQuery and HTML/CSS">
+		<meta name="keywords" content="responsive, grid, spa, single page application">
+		<meta name="author" content="Etienne Laramee">
+		
+		<!-- Grid -->
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<header>
+			<!-- Banner -->
+			<div class="main-banner hide-mobile">
+				<h1>Lorem Ipsum</h1>
+				<h3>Lorem ipsum dolor sit amet. </h3>
+			</div>
+			<!-- /Banner -->
+				
+			<div class="nav-container">
+				<!-- Nav bar -->
+				<ul id="main-nav" class="main-nav">
+					<li id="home" class="main-tab main-active">
+						<a href="javascript:void(0)" onclick="main_nav('home');">Home</a>
+					</li>
+					<li id="one" class="main-tab">
+						<a href="javascript:void(0)" onclick="main_nav('one');">Menu One</a>
+					</li>
+					<li id="two" class="main-tab">
+						<a href="javascript:void(0)" onclick="main_nav('two');">Menu Two</a>
+					</li>
+				</ul>
+				<!-- /Nav bar -->
+				
+				<!-- Side Bar -->
+				<ul class="side-bar">
+					<!-- Home -->
+					<li id='three' class='side-tab side-active home'>
+						<a href="javascript:void(0)" onclick="side_nav('three');">Menu Three</a>
+					</li>
+					<li id='four' class='side-tab home'>
+						<a href="javascript:void(0)" onclick="side_nav('four');">Menu Four</a>
+					</li>
+					<!-- /Home -->
+					
+					<!-- Menu One -->
+					<li id="five" class="side-tab one">
+						<a href="javascript:void(0)" onclick="side_nav('five');">Menu Five</a>
+					</li>
+					<li id="six" class="side-tab one">
+						<a href="javascript:void(0)" onclick="side_nav('six');">Menu Six</a>
+					</li>
+					<li id="seven" class="side-tab one">
+						<a href="javascript:void(0)" onclick="side_nav('seven');">Menu Seven</a>
+					</li>
+					<li id="eight" class="side-tab one">
+						<a href="javascript:void(0)" onclick="side_nav('eight');">Menu Eight</a>
+					</li>
+					<li id="nine" class="side-tab one">
+						<a href="javascript:void(0)" onclick="side_nav('nine');">Menu Nine</a>
+					</li>
+					<li id="ten" class="side-tab one">
+						<a href="javascript:void(0)" onclick="side_nav('ten');">Menu Ten</a>
+					</li>
+					<li id="eleven" class="side-tab one">
+						<a href="javascript:void(0)" onclick="side_nav('eleven');">Menu Eleven</a>
+					</li>
+					<!-- /Menu One -->
+					
+					<!-- Menu Two -->
+					<li id="twelve" class="side-tab two">
+						<a href="javascript:void(0)" onclick="side_nav('twelve');">Menu Twelve</a>
+					</li>
+					<li id="thirteen" class="side-tab two">
+						<a href="javascript:void(0)" onclick="side_nav('thirteen');">Menu Thirteen</a>
+					</li>
+					<li id="fourteen" class="side-tab two">
+						<a href="javascript:void(0)" onclick="side_nav('fourteen');">Menu Fourteen</a>
+					</li>
+					<!-- /Menu Two -->
+				</ul>
+				<!-- /Side Bar -->
+			</div>
+			
+		</header>			
+			<!-- Main Content -->
+			<div class="main-content">				
+				<div class="grid-container primary-content">
+					<!-- Three-->
+					<div class="grid-12 content-three">
+						<p>
+							Donec aliquet nibh ut lorem tempor, vel feugiat ante auctor. Suspendisse vulputate ipsum eget velit ultrices, at ultricies risus cursus. Curabitur sapien massa, accumsan nec enim in, dignissim semper dolor. Etiam a ante quis sapien ornare sollicitudin. Fusce eget fermentum turpis. Pellentesque consectetur quam nibh, in lacinia quam blandit vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean aliquet hendrerit viverra. Phasellus id scelerisque est, a pulvinar elit. Cras quis risus tortor. Fusce porta rhoncus consectetur. Morbi ac est ac sem eleifend rhoncus sit amet sed nisi. Morbi sed condimentum enim, nec tincidunt diam. Nulla vestibulum felis nulla, at tempus felis vestibulum non. Suspendisse potenti. Nullam pharetra vestibulum purus ac tincidunt.
+						</p>
+						<p>
+							Aliquam quam lorem, euismod a tincidunt vel, sagittis id nibh. Duis gravida turpis id metus semper placerat. Vivamus sed enim eu nisl aliquet commodo nec nec dui. Donec tristique sem metus, id efficitur tortor dignissim a. Nulla sem leo, convallis ac rhoncus vel, dapibus ut ligula. Vivamus rhoncus hendrerit mi ut ultrices. In suscipit lobortis ante, vitae gravida elit facilisis pharetra. Vivamus et sollicitudin felis. Pellentesque in turpis quis ante vehicula ultrices eget vitae risus.
+						</p>
+						<p>
+							Vestibulum finibus mattis auctor. Praesent malesuada, velit ac vehicula accumsan, quam ligula pellentesque ipsum, ut fermentum ex ante nec lorem. Proin non rutrum odio, nec viverra nisi. Ut at justo neque. Aliquam at nisi augue. Integer pulvinar, metus eu egestas ornare, massa enim porta arcu, vitae euismod dui mi eu metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sem erat, feugiat et mollis ac, elementum tristique ipsum. Donec pretium, nisi malesuada malesuada sagittis, lorem augue maximus justo, quis pretium ipsum tortor non lectus. Pellentesque sollicitudin condimentum maximus. Sed quis nisl vulputate, facilisis neque at, placerat massa. Duis consequat blandit eros, eget luctus libero bibendum id. Mauris vel sem ante.
+						</p>
+						<p>
+							Curabitur vel urna ut elit volutpat ullamcorper sit amet ut tortor. Cras eget fringilla sem. Integer ultricies ex id laoreet laoreet. Etiam in felis augue. Sed ipsum purus, vestibulum a lorem at, vulputate condimentum lorem. Ut ut dapibus quam, sit amet hendrerit nibh. Aenean elementum sodales sem in suscipit. Cras odio erat, pretium nec augue nec, sagittis eleifend ante. Sed quis magna luctus nulla egestas elementum et eu ex. Phasellus ut diam erat. Aenean quis lectus tincidunt, tristique augue et, maximus dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis id interdum metus. Duis tempus aliquam turpis, eu egestas est mollis vitae.
+						</p>
+						<p>
+							Cras finibus leo quis ligula malesuada, et facilisis nisl gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at cursus tellus, vel venenatis nunc. Vivamus dignissim risus eu interdum elementum. Mauris hendrerit scelerisque sapien. Integer ex arcu, eleifend id molestie et, pretium sit amet ante. Sed tincidunt lacinia dolor, non pharetra nunc efficitur non. Suspendisse porttitor quam nisl, nec facilisis sem rutrum nec. Cras laoreet porta enim, et molestie magna tristique eu. 
+						</p>
+					</div>
+					<!-- /Three -->
+					
+					<!-- Four -->
+					<div class="grid-12 content-four">
+						<p>
+							Aenean semper tellus a mauris ultricies tincidunt. In sollicitudin, leo vel aliquam tincidunt, velit nunc pretium nisl, nec malesuada tortor nisl nec metus. Morbi sed nisi non neque tincidunt condimentum. Nunc pharetra fermentum magna. Curabitur in feugiat dolor. Vestibulum sed lacinia nulla. Nulla semper volutpat molestie. Sed ac gravida arcu, at vestibulum nisl. Donec tristique mattis mollis. Sed accumsan nisi in varius gravida. Aliquam erat volutpat. Donec non dui dictum, aliquam lorem in, feugiat felis.
+						</p>
+						<p>
+							Proin at accumsan metus. Quisque maximus at nulla eget vehicula. Duis quam velit, posuere sed fermentum ac, cursus venenatis justo. Donec facilisis risus nibh, non volutpat sapien commodo vitae. Proin feugiat fermentum diam, quis fermentum velit gravida et. Cras non vehicula urna, nec porttitor felis. Aliquam enim felis, gravida non efficitur varius, rutrum in felis. Mauris feugiat neque nisl, ac rhoncus leo sollicitudin nec. Nulla sit amet vehicula diam, ut vehicula sem. Fusce at faucibus odio. Integer mollis libero eu sagittis congue.
+						</p>
+						<p>
+							Proin a aliquet purus, eu efficitur odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sit amet fringilla orci. Donec fringilla mi et bibendum ornare. Aenean quis varius risus. In hac habitasse platea dictumst. Pellentesque finibus, nunc tristique lacinia rhoncus, neque magna sollicitudin dolor, a mollis nunc quam eu metus. Integer eget maximus ligula. Nulla sed justo sollicitudin augue vulputate egestas. Suspendisse aliquet egestas magna efficitur consectetur. Suspendisse ullamcorper lectus non condimentum sagittis. Suspendisse potenti. 
+						</p>
+					</div>
+					<!-- /Four -->
+					
+					<!-- Five -->
+					<div class="grid-12 content-five">
+						<p>
+							Ut elementum a urna in vulputate. Nam neque sapien, pellentesque sed porta eu, placerat efficitur diam. Donec non orci commodo, auctor metus vitae, condimentum sem. Vestibulum libero justo, aliquam eget risus sit amet, convallis viverra sapien. Nulla feugiat convallis elit, et tempor massa varius et. Proin posuere gravida lorem non mattis. Aliquam venenatis imperdiet leo vehicula laoreet. Mauris elementum tellus lectus, non congue quam varius vel. Nullam sit amet nunc commodo, ornare nunc et, blandit mauris. Nam vel enim ornare, cursus tortor ut, cursus enim. Nam sit amet condimentum sem. Maecenas lobortis fermentum ipsum sed pulvinar. Sed sodales, metus a varius aliquam, ante quam lobortis ex, eleifend tincidunt diam mauris a odio. Duis ligula nibh, facilisis vel vestibulum ac, condimentum in lorem. Phasellus porttitor non tellus at mattis.
+						</p>
+						<p>
+							Praesent ultrices, ante in varius lobortis, mauris justo vestibulum mauris, sit amet molestie justo augue id erat. Quisque lobortis tristique sagittis. Phasellus volutpat ut mauris vitae scelerisque. In non pharetra diam. Phasellus vitae faucibus odio. Nulla tincidunt cursus neque, et volutpat lacus. Sed a porttitor dui, quis vehicula dui. Vivamus sapien ligula, laoreet non elit non, rhoncus pretium erat. Curabitur euismod augue eget nisl facilisis pulvinar. Donec nec imperdiet ipsum, eget fermentum felis. Sed a tristique mauris, vitae mattis neque. Mauris lorem lorem, luctus id elit non, aliquet fermentum dolor. In ac arcu lacus. Aliquam erat nisl, iaculis nec tempor ut, maximus eget enim. Sed mollis consectetur orci.
+						</p>
+						<p>
+							unc commodo dolor diam, sodales tempus dolor fringilla blandit. Integer posuere efficitur nisi. Vivamus vulputate congue nibh a gravida. Nam diam massa, viverra quis gravida eu, sodales vel ligula. Nullam ut lobortis nisi. Vivamus quis ipsum sed eros pellentesque posuere in imperdiet nulla. Etiam pharetra finibus dui ut suscipit. Duis iaculis tempus feugiat. Vestibulum rhoncus, tortor quis porttitor aliquam, neque massa dictum felis, a ornare enim nisl non massa. Etiam dictum eget erat eu commodo. Cras maximus, nunc sed molestie ultrices, eros lorem luctus massa, condimentum accumsan diam justo a nunc.
+						</p>
+						<p>
+							Suspendisse potenti. Morbi vulputate tristique faucibus. Mauris convallis neque venenatis sem efficitur imperdiet. Duis aliquet vitae tellus nec ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa ante, iaculis vel sodales et, condimentum eget quam. Praesent et maximus metus. Cras gravida dictum lectus, nec fringilla elit pellentesque nec. In elit mi, cursus quis nunc sed, iaculis accumsan lacus. Phasellus at massa arcu. Vestibulum sodales turpis eu eros aliquam, et rhoncus sem posuere. In hac habitasse platea dictumst. Donec dictum sem eleifend augue condimentum rhoncus. Nam posuere diam at quam dignissim bibendum. 
+						</p>
+					</div>
+					<!-- /Five -->
+					
+					<!-- Six -->
+					<div class="grid-12 content-six">
+						<p>
+							Curabitur non nisl nulla. Ut ac consequat nulla. Nunc blandit ante nec semper maximus. Aenean leo libero, malesuada ut molestie ut, rutrum vitae velit. Phasellus eleifend id ante et eleifend. Nulla vehicula sagittis mauris vel hendrerit. Phasellus tristique quis leo accumsan maximus. Aenean lacinia tellus vel ipsum posuere venenatis. Proin sollicitudin diam nec malesuada pharetra. Ut quis vehicula risus, vel tempor augue. Vivamus egestas felis at euismod fermentum. In hac habitasse platea dictumst.
+						</p>
+						<p>
+							Nam dui sapien, scelerisque sit amet ante sed, pulvinar interdum metus. Quisque consequat ut ex id ullamcorper. Suspendisse potenti. Etiam ut enim arcu. Integer dignissim enim laoreet enim congue vulputate. Curabitur facilisis accumsan sapien nec gravida. Proin enim nibh, semper id commodo in, condimentum eu sapien. Pellentesque porttitor, urna placerat pellentesque venenatis, ante lectus dapibus nulla, ut laoreet lorem justo sed augue. Etiam tempor elit ac purus venenatis, eget molestie tortor tristique. Ut egestas pellentesque urna. Mauris consequat vehicula molestie. Donec malesuada sapien imperdiet, maximus eros eget, accumsan diam. Fusce risus lorem, tristique ut odio a, elementum ullamcorper ex.
+						</p>
+						<p>
+							Nullam posuere quam ut nunc tincidunt lobortis. Donec consectetur mauris et velit consequat, at laoreet lorem rhoncus. Sed a ex non nulla vestibulum mollis varius non mi. Nulla id justo orci. Aenean nunc quam, luctus nec neque eu, mollis tincidunt elit. Sed dapibus tincidunt felis a molestie. Suspendisse varius tempus lectus, quis tempus odio congue vel. Pellentesque nisl tellus, vulputate gravida metus non, tincidunt molestie velit. Morbi nec ante non libero feugiat rhoncus. Vestibulum faucibus enim ac dolor porttitor luctus. Suspendisse potenti. Fusce porta vulputate ornare. Mauris convallis sapien et lectus aliquam, nec malesuada augue tempor.
+						</p>
+						<p>
+							Nunc facilisis hendrerit dui in ornare. Sed sed metus egestas, porttitor turpis ut, condimentum felis. Fusce efficitur, diam sed egestas tempor, erat orci feugiat quam, eget pretium ipsum ante vel ante. Fusce facilisis ex nec posuere dictum. Aenean dictum, diam eget maximus molestie, mauris massa facilisis tortor, sed ullamcorper mi diam non risus. Aenean gravida, enim ut malesuada fermentum, orci nisi placerat ante, vitae ornare leo nibh id erat. Phasellus mattis quam diam, eget efficitur velit auctor id. Nam pulvinar, augue a ultricies egestas, ligula risus consectetur diam, quis fringilla magna neque sit amet dui. Etiam commodo varius nulla nec hendrerit. Donec ac sagittis purus. Maecenas porta pretium velit sed rhoncus. Suspendisse porttitor in diam pulvinar venenatis. Aenean ullamcorper aliquam vestibulum. 						
+						</p>
+					</div>
+					<!-- /Six -->
+					
+					<!-- Seven -->
+					<div class="grid-12 content-seven">
+						<p>
+							Aliquam in pellentesque velit. Aliquam hendrerit imperdiet quam a imperdiet. Vivamus vel est ac dui tempus tristique. Sed venenatis rutrum turpis ut malesuada. Duis interdum nisi at augue blandit tristique ac eu sem. Phasellus eget laoreet enim, efficitur molestie sapien. Ut aliquam tortor dolor, eget finibus quam finibus ut. Aliquam facilisis nisl nunc, at imperdiet est luctus id. Sed at ligula porta, dictum tellus sit amet, fringilla velit. Aliquam ut dictum sapien, quis consequat elit. Fusce ut rutrum nunc. Nullam nec molestie magna, ut sagittis turpis. Etiam nec sem quis felis vehicula aliquet non vitae dui.
+						</p>
+						<p>
+							Vivamus sed commodo lacus. Sed dignissim mauris lobortis fringilla pellentesque. Pellentesque non aliquet ipsum. Morbi commodo, augue et semper finibus, enim urna egestas leo, non fringilla enim erat eget diam. Vestibulum mattis lacinia quam, non venenatis ante tristique id. Quisque ornare ut diam eget commodo. Nunc tincidunt augue quis tortor accumsan elementum. Sed dignissim ex velit, in rhoncus tellus lacinia id. Nunc interdum sapien sed ullamcorper semper. Suspendisse mollis imperdiet urna, eget tristique tellus eleifend et. Nam varius viverra quam condimentum commodo.
+						</p>
+						<p>
+							Nullam gravida, nulla quis finibus tincidunt, neque dolor sodales ex, sed finibus turpis purus vel justo. Aliquam condimentum lacus nec quam pharetra cursus. Integer ac egestas mauris, sed pretium purus. Nam quis tortor et urna fermentum sodales. Proin tincidunt, ipsum vel ornare luctus, risus tortor interdum ante, ac ultricies est velit sit amet nisl. Vivamus hendrerit tincidunt nunc, sit amet gravida nisl placerat non. Nunc turpis lorem, pellentesque non ultricies non, fringilla suscipit neque. Nunc aliquet ipsum est, quis pellentesque lorem rutrum porta. Cras sagittis orci nunc, et varius tellus varius at. Fusce congue gravida justo at placerat. Maecenas sodales risus sem, viverra dapibus dui sodales feugiat. Morbi quis iaculis elit, at rhoncus metus. Donec pharetra velit ut ultrices maximus. Mauris ac tincidunt eros. Donec eget urna ut sem rhoncus finibus a ac ipsum. Vestibulum eleifend, felis sed sollicitudin aliquam, quam lectus vulputate ligula, sit amet maximus velit purus sit amet purus.
+						</p>
+						<p>
+							Curabitur aliquet nunc bibendum, dignissim nulla sed, ornare metus. Mauris iaculis aliquet lacinia. Quisque ac finibus lorem. Curabitur viverra elit eget egestas tristique. Morbi ac metus non tortor venenatis mollis finibus pulvinar dui. Curabitur justo libero, aliquam ac feugiat a, finibus ac velit. Donec tincidunt fermentum lacus, cursus ornare dui scelerisque a. Quisque lectus enim, tempor vitae dui a, hendrerit pulvinar leo. 
+						</p>
+					</div>
+					<!-- /Seven -->
+					
+					<!-- Eight -->
+					<div class="grid-12 content-eight">
+						<p>
+							Suspendisse potenti. Aenean luctus mattis lorem vitae tincidunt. Praesent interdum mattis nunc eu condimentum. Vestibulum sit amet tincidunt erat, a ultricies risus. Proin auctor urna quis fermentum sodales. Nunc dapibus tellus eget massa tristique efficitur vel ornare odio. Morbi vulputate, est nec posuere dictum, arcu nisl sollicitudin erat, sit amet iaculis nisl massa a dolor.
+						</p>
+						<p>
+							Quisque aliquet tempor condimentum. Curabitur consectetur facilisis dolor et efficitur. Nam et justo lectus. Morbi condimentum pretium risus, vel pharetra leo euismod id. Suspendisse potenti. Etiam a tellus et tortor fringilla suscipit. In vestibulum quis tortor ac ultricies. Curabitur faucibus, lacus sit amet tincidunt condimentum, dui massa fringilla sapien, eu mattis magna felis posuere nisl.
+						</p>
+						<p>
+							Integer congue congue pellentesque. Donec urna augue, facilisis quis fringilla nec, fringilla a justo. Curabitur molestie condimentum tortor sed lobortis. Fusce imperdiet lectus dolor, nec egestas risus commodo quis. Fusce neque arcu, facilisis convallis dignissim eu, gravida non ante. Aliquam a felis vel turpis molestie malesuada eu ullamcorper nisl. Morbi dignissim sem sit amet ornare elementum. Donec vehicula, erat nec tristique sagittis, urna erat volutpat felis, laoreet congue ante odio nec eros. Nullam nec libero augue. Donec sagittis viverra justo, at pulvinar mauris. Aliquam sed accumsan ex. Duis efficitur posuere dolor, ut lacinia elit volutpat a. Maecenas cursus neque vel ex porttitor, pharetra posuere ex porta. Mauris commodo pharetra libero non sollicitudin. Sed commodo tempor diam, et dictum velit pulvinar vel. 
+						</p>
+					</div>
+					<!-- /Eight -->
+					
+					<!-- Nine -->
+					<div class="grid-12 content-nine">
+						<p>
+							Vivamus et quam sed quam ornare feugiat. Curabitur volutpat quam quis mauris auctor facilisis. Curabitur nec tempor risus. Sed luctus quam nec augue consectetur, non gravida nisi fermentum. In cursus dui a lectus viverra iaculis non dignissim dui. Sed eget enim sapien. Donec luctus ante in nisi posuere, ut suscipit tortor tempor. Phasellus condimentum leo justo, sed dignissim neque tincidunt quis. Nulla congue a odio sit amet dictum. Cras fermentum tortor nec dui porta aliquet. Donec sagittis condimentum aliquam. Nulla facilisi. Donec at interdum nisi. Donec ullamcorper metus ac dolor vulputate dictum. Nulla condimentum leo lacus, a comodo eros hendrerit nec.
+						</p>
+						<p>
+							Pellentesque hendrerit justo leo, vehicula faucibus sapien rhoncus vitae. Duis dapibus est id pharetra finibus. Pellentesque id turpis at augue malesuada congue. Aenean scelerisque, lorem id pellentesque imperdiet, lectus orci ornare arcu, maximus egestas risus urna eget urna. Vestibulum rhoncus malesuada ligula, id rhoncus tortor tincidunt ut. Sed ex neque, facilisis eu orci eget, malesuada cursus leo. Cras imperdiet fermentum interdum. Mauris et quam mattis, iaculis ipsum sit amet, interdum erat. Phasellus consectetur fermentum massa. Nunc accumsan justo tortor, a volutpat sem vestibulum non. Quisque dignissim auctor metus quis consequat. Sed lacinia, libero vel finibus porta, nulla massa auctor dolor, ut pretium ipsum risus eget tellus. Duis euismod, leo id viverra ullamcorper, lectus sem dapibus enim, vel lacinia nisi ex et nisi. Donec mauris augue, posuere eget diam consectetur, vehicula consequat ante.
+						</p>
+						<p>
+							Sed quis massa est. Ut elementum aliquet tortor, mollis dictum odio egestas ac. Vivamus bibendum, mi sed vehicula malesuada, nulla lectus vehicula est, at gravida eros quam sit amet mi. Nullam sollicitudin facilisis tempus. Praesent tristique neque eget massa iaculis imperdiet. Maecenas blandit, justo et cursus consequat, magna erat vestibulum massa, rutrum cursus lectus ligula vitae diam. Nulla ac pellentesque ipsum. Ut dictum nibh vehicula dolor volutpat sagittis. In nibh lacus, convallis non ligula quis, condimentum blandit justo. Sed tincidunt convallis velit, eget placerat erat congue vel. Phasellus pulvinar a justo et pellentesque. 
+						</p>
+					</div>
+					<!-- /Nine -->
+					
+					<!-- Ten -->
+					<div class="grid-12 content-ten">
+						<p>
+							Pellentesque mollis enim a sollicitudin commodo. Integer volutpat commodo nulla ut eleifend. Aliquam vel nisi sit amet tortor interdum sagittis nec eu odio. Pellentesque dignissim ipsum eget fermentum pretium. Curabitur ac maximus sem. Quisque eleifend facilisis efficitur. In tempor nibh posuere, dignissim diam eget, feugiat lacus. Sed viverra eu massa faucibus facilisis. Praesent sed finibus metus, ut gravida libero. Etiam viverra libero sed massa dapibus, a facilisis massa eleifend. Nunc et felis ac ex hendrerit suscipit.
+						</p>
+						<p>
+							Integer eget ultricies metus, ac varius ligula. Vivamus non nunc nibh. Phasellus eros justo, posuere quis hendrerit ut, tristique eget felis. Vivamus at nunc elit. Proin facilisis elit eget risus volutpat blandit. Vivamus sodales faucibus mollis. Quisque ligula velit, placerat quis arcu vel, lobortis viverra ante. Quisque nisi turpis, pellentesque ac ligula vel, pretium lobortis velit. Pellentesque eleifend, urna ac varius vestibulum, odio lorem sollicitudin augue, quis tincidunt arcu nulla ut nibh. Vestibulum dignissim imperdiet risus, quis condimentum diam maximus a. Nunc feugiat, lorem a lacinia volutpat, ipsum dui ultrices nulla, quis pellentesque tortor ex vitae odio. 
+						</p>
+					</div>
+					<!-- /Ten -->
+					
+					<!-- Eleven -->
+					<div class="grid-12 content-eleven">
+						<p>
+							Sed viverra lectus eu est finibus porttitor. Suspendisse pretium risus purus, suscipit eleifend tellus tempor vitae. Sed fringilla lobortis risus ut pretium. Fusce porttitor sem mattis laoreet viverra. Pellentesque vestibulum maximus turpis, quis venenatis metus gravida ut. Morbi a neque urna. Vestibulum lobortis non ligula nec pellentesque. Praesent facilisis tempor fringilla. Proin posuere tortor elit. Curabitur commodo facilisis neque, sed porttitor turpis faucibus vitae. Nam ac est in mauris sodales finibus.
+						</p>
+						<p>
+							Phasellus neque nisl, lacinia in imperdiet lacinia, placerat ut nulla. Donec ac erat eget massa aliquet sodales. Donec vulputate turpis mollis dolor gravida, eu varius arcu lobortis. Donec placerat quis arcu vel posuere. Praesent porta mi et lorem cursus, id vehicula dolor porttitor. Phasellus vestibulum odio eu varius porta. Nunc mattis auctor lectus, a volutpat nulla bibendum in. Curabitur in aliquet metus, fringilla pharetra arcu. Fusce sit amet mauris eget lorem iaculis sodales ut sit amet est. Pellentesque fringilla elementum odio, sit amet porttitor diam luctus et. Curabitur a risus vitae magna interdum sodales quis ac massa. Etiam quis nibh ut elit vulputate dignissim. Sed fringilla nibh sed dignissim ornare. Donec in libero tincidunt ipsum imperdiet eleifend eu quis augue. Vestibulum eu felis ac libero suscipit rhoncus vitae sit amet lacus.
+						</p>
+						<p>
+							Vivamus luctus eros in eros blandit consectetur. Fusce sed nulla vel nulla molestie posuere quis at nisl. Quisque ipsum lacus, convallis nec convallis sit amet, iaculis id eros. Duis non eleifend justo. Vestibulum euismod pulvinar condimentum. Quisque aliquet sollicitudin ante ut euismod. Nam nisl libero, iaculis at risus vitae, ultricies elementum erat. Curabitur pretium ullamcorper ullamcorper. Vivamus id vehicula nunc.
+						</p>
+						<p>
+							Phasellus fringilla lacus justo, eu gravida libero placerat in. Nunc hendrerit eget felis venenatis varius. Ut sit amet massa nisi. Duis a ex nibh. Donec magna lectus, eleifend eget augue quis, fermentum facilisis mi. Sed rhoncus neque nec velit bibendum porttitor. Maecenas porta, ex sed lobortis congue, metus leo porttitor metus, vitae convallis neque nibh consequat libero. Suspendisse quis condimentum magna. Nam orci nunc, vestibulum laoreet facilisis eget, porttitor quis erat. Pellentesque vitae nunc sed ligula convallis accumsan. Suspendisse ac risus convallis, gravida purus et, accumsan libero. Morbi fermentum nulla sem, ac aliquam tortor gravida a. Mauris ac sem sem. Suspendisse imperdiet interdum est, a tincidunt sem vulputate in.
+						</p>
+						<p>
+							Vivamus luctus sapien odio, sit amet eleifend leo porttitor non. Proin pulvinar felis sed lorem blandit fringilla. Donec faucibus nisi congue, ultrices magna commodo, ultricies justo. Proin tincidunt nulla purus, varius vehicula est molestie at. Morbi hendrerit aliquam tortor, vel mollis ipsum pellentesque vitae. Vestibulum condimentum dictum sagittis. Donec eu elementum augue. Nulla facilisi. Maecenas finibus eros a augue posuere fringilla. 
+						</p>
+					</div>
+					<!-- /Eleven -->
+					
+					<!-- Twelve -->
+					<div class="grid-12 content-twelve">
+						<p>
+							Suspendisse venenatis lacus vel est aliquam, vitae egestas tellus gravida. Donec in cursus diam. Nulla convallis consectetur nisi, non pretium leo venenatis eu. Proin arcu sapien, dapibus in tortor id, commodo porttitor arcu. Maecenas ac justo hendrerit lacus vestibulum tincidunt a sed diam. Etiam dictum risus imperdiet velit gravida, sit amet consectetur odio porta. Sed pulvinar consectetur justo id tempus. Ut varius cursus libero, in interdum tellus fringilla sed. Nulla condimentum erat leo, vel aliquet lacus viverra ac. 
+						</p>
+					</div>
+					<!-- /Twelve -->
+					
+					<!-- Thirteen -->
+					<div class="grid-12 content-thirteen">
+						<p>
+							Aliquam in arcu vel mi consectetur porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla a quam egestas, molestie orci ut, sodales enim. Sed eget faucibus risus. Ut condimentum viverra tortor eget pulvinar. Mauris in ipsum eget dolor cursus venenatis id ut orci. Sed sit amet sem eu metus scelerisque tincidunt. Nunc non lacinia augue. Nullam efficitur ipsum quis nibh efficitur, quis pulvinar libero efficitur. Nunc eget nibh vel quam molestie fringilla. Duis a velit ullamcorper, fermentum enim nec, aliquet ipsum. 
+						</p>
+					</div>
+					<!-- /Thirteen -->
+					
+					<!-- fourteen -->
+					<div class="grid-12 content-fourteen">
+						<p>
+							Aenean vulputate tincidunt ex, vel interdum magna. Donec hendrerit eleifend ipsum sit amet pulvinar. Aliquam pharetra convallis lorem ac pretium. Sed viverra ac turpis eu bibendum. Sed et mi quis urna molestie vehicula. Maecenas efficitur neque eget risus hendrerit, eu ultricies quam porttitor. Cras sollicitudin est vitae quam efficitur, vitae sagittis dui tristique. Donec ipsum nibh, pharetra nec velit quis, vehicula efficitur massa. Aliquam consequat, ex fringilla tempor tempor, ligula purus varius eros, sit amet ultricies nunc mauris eu magna. Curabitur blandit elit vel dictum accumsan. 
+						</p>
+					</div>
+					<!-- /fourteen -->
+					
+					<!-- Location one -->
+					<div class="grid-12 content-location-one">
+						<p>
+							Suspendisse congue non metus vel suscipit. Aenean et porttitor purus, nec sodales eros. Morbi fermentum eget magna nec elementum. Integer condimentum dapibus elit, eget dictum lacus aliquam nec. Pellentesque sit amet laoreet dolor. Vivamus pretium ullamcorper ipsum sit amet pretium. Duis diam arcu, mollis vitae pellentesque a, hendrerit nec ante. Donec ultricies arcu vitae tortor commodo blandit. Duis tortor nunc, tincidunt quis ligula auctor, vehicula blandit nisi. Quisque tempus eros libero, quis pellentesque eros scelerisque ut. Integer nec tellus at est placerat placerat vel ac elit. Maecenas in vulputate urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+						</p>
+					</div>
+					<!-- /Location One -->
+					
+					<!-- location two -->
+					<div class="grid-12 content-location-two">
+						<p>
+							Phasellus molestie ex eget nisi accumsan elementum. Nulla suscipit eu tortor non tempor. Nullam in lacus nec velit pulvinar euismod. Morbi quis justo vitae est consequat feugiat. Etiam sem enim, porta at lacinia at, mollis nec purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eleifend augue et turpis egestas, ac ultricies ipsum ultrices. Nullam a rhoncus libero. Aliquam congue justo et diam facilisis, non feugiat felis porta. Proin imperdiet dui eros, ut pretium elit rhoncus ac. Suspendisse tempus metus id purus mattis, eget ullamcorper ex pellentesque. Mauris sagittis, nisi ut scelerisque fringilla, lorem mauris ullamcorper nisi, sit amet consectetur nisl nunc eu turpis. 
+						</p>
+					</div>
+					<!-- /location two -->
+					
+					<!-- location three -->
+					<div class="grid-12 content-location-three">
+						<p>
+							Mauris ullamcorper, augue a tempor tincidunt, nisl justo rutrum diam, a finibus mi est sed felis. Ut elementum sed metus in condimentum. Nam pulvinar aliquam dui, ac elementum massa vulputate a. Praesent in feugiat lorem. Nunc pellentesque mi at dui finibus, non aliquet justo scelerisque. Nam at neque justo. Vestibulum viverra ex eros, sit amet porta massa eleifend eu. Nunc varius mi tempor neque tincidunt, vel molestie diam elementum. Sed gravida et turpis at ultricies. 
+						</p>
+					</div>
+					<!-- /location three -->	
+					
+					<!-- Brochures -->
+					<div class="grid-12 content-side-brochures">
+						<p>
+							Sed gravida congue tellus quis pulvinar. Nam lacinia libero vitae ipsum lobortis, non vestibulum massa lobortis. Fusce ut ex sit amet mi scelerisque faucibus. Fusce malesuada cursus urna eu laoreet. Vivamus vehicula tellus purus, quis hendrerit ante tristique id. Donec aliquam mauris at augue blandit rutrum. Fusce luctus ipsum ac pellentesque suscipit. Nam scelerisque auctor odio sed porta. Sed non ligula posuere, posuere risus rutrum, ullamcorper felis. Sed fermentum, velit ac dignissim ornare, tortor orci vestibulum felis, sit amet sodales neque nulla non enim. In a tincidunt neque. 
+						</p>
+					</div>
+					<!-- /Brochures -->	
+					
+					<!-- endorse one -->
+					<div class="grid-12 content-endorse-one">
+						<p>
+							Cras volutpat nisl a magna tempor, vitae sagittis ligula dignissim. Donec lorem augue, pharetra nec feugiat sed, eleifend at elit. Suspendisse ut pellentesque mauris. Donec iaculis, erat eget mattis malesuada, erat eros facilisis massa, quis rhoncus odio urna eget nulla. Ut eget tempor risus. Phasellus porta nunc vitae nunc vehicula sagittis. Nunc sit amet ligula odio. Phasellus tempor luctus sem sed elementum. Maecenas fringilla massa eu fringilla placerat. Pellentesque condimentum felis a lorem porttitor, sed faucibus justo condimentum. Curabitur pellentesque facilisis tellus. 
+						</p>
+					</div>
+					<!-- /endorse one -->	
+					
+					<!-- endorse two -->
+					<div class="grid-12 content-endorse-two">
+						<p>
+							Pellentesque eget enim varius, elementum nunc sed, accumsan sem. Nullam libero tortor, euismod sit amet velit vel, congue porttitor nisi. Morbi at justo sapien. Vivamus volutpat massa mi, non mollis orci sagittis nec. Quisque fringilla vestibulum gravida. Suspendisse et leo nunc. Nullam eget dolor id nunc faucibus pellentesque at sit amet urna. Donec efficitur non urna id porta. 
+						</p>
+					</div>
+					<!-- /endorse two -->		
+		
+				</div>
+			</div>
+			<!-- /Main Content -->
+			
+		</header>
+		
+		<div class="main-footer">
+			<div class="grid-container footer-container">
+				<div class="grid-4 contact-us">
+					<h2>Contact us</h2>
+					<ul>
+						<li><a href="javascript:void(0)" onclick="side_nav('location-one');">Location 1</a></li>
+						<li><a href="javascript:void(0)" onclick="side_nav('location-two');">Location 2</a></li>
+						<li><a href="javascript:void(0)" onclick="side_nav('location-three');">Location 3</a></li>
+					</ul>
+				</div>
+				<div class="grid-4 endorsements">
+					<h2>Endorsements</h2>
+					<ul>
+						<li><a href="javascript:void(0)" onclick="side_nav('endorse-one');">Endorse 1</a></li>
+						<li><a href="javascript:void(0)" onclick="side_nav('endorse-two');">Endorse 2</a></li>
+					</ul>
+				</div>
+				<div class="grid-4 brochures">
+					<h2>Brochures</h2>
+					<ul><li><a href="javascript:void(0)" onclick="side_nav('side-brochures');">Download our brochures</a></li></ul>
+				</div>
+			</div> <!-- /Grid Container -->
+			
+			<div class="grid-12 copyright-link">
+				<p>
+					&copy; 2015 <a href="http://www.etiennelaramee.com">Etienne Laram&eacute;e</a>
+				</p>
+			</div>
+			
+			<!-- JQuery -->
+			<script src="js/jquery.js"></script>
+			<!-- Javascript functions to control menus -->
+			<script src="js/functions.js"></script>
+		</div>
+		
+	</body>
+</html>
