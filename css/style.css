@@ -24,7 +24,7 @@ img {
 	background-color: #ccc;
 }
 .main-footer {
-	color: #fff;
+	color: #FFAD34;
  	background-color: #222;
 }
 	
@@ -67,6 +67,7 @@ img {
 	background-color: #aaa; 
 }
 .main-footer {
+	text-size: 90%;
 	text-align: center;
 	margin-top: 30px;
 	padding-top: 5px;
@@ -75,7 +76,11 @@ img {
 }
 
 .main-footer a {
-	color: #fff;
+	color: #FFF;
+}
+
+.copyright-link a {
+	color: #FFAD34;
 }
 
 .main-content ul {
@@ -142,7 +147,7 @@ img {
 		position: fixed;
 	}
 	.main-banner {
-		background: #dfe2e4 url("http://lorempixel.com/1600/500");
+		background: #dfe2e4 url("http://lorempixel.com/b/1600/500");
 		padding-top: 90px;
 		text-align: center;
 		color: white;

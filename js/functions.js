@@ -8,7 +8,7 @@ $("document").ready(function($) {
 	
 	// Select default tabs and content
 	main_nav('home');
-	side_nav('the-objectives');
+	side_nav('three');
 	
 });
 
